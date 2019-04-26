@@ -1,26 +1,7 @@
 # Android Scratchcard
-Light Weighted Scratchcard View Library for Android
+Custom Scratchcard View for Android
 
- ![AndroidScratchCard - Example](https://raw.githubusercontent.com/myinnos/AndroidScratchCard/master/images-gif/androidscratchcard-example.gif)
-  
-#### Kindly use the following links to use this library:
-
-In build.gradle (Project)
-```java
-allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-    }
-}
-```
-And then in the other gradle file(may be your app gradle or your own module library gradle, but never add in both of them to avoid conflict.)
-```java
-dependencies {
-    // AppCompat version
-	  implementation 'com.github.myinnos:AndroidScratchCard:v1.0'
-}
-```          
+       
 How to use
 -----
 **Step 1:** add this to your xml:
@@ -36,7 +17,7 @@ How to use
             android:layout_centerInParent="true"
             android:text="YOU EARNED 20" />
   
-        <in.myinnos.androidscratchcardexample.helpers.ScratchCard
+        <in.niks.helpers.ScratchCard
             android:id="@+id/scratchCard"
             android:layout_width="240dp"
             android:layout_height="150dp"
@@ -61,20 +42,12 @@ mScratchCard.setOnScratchListener(new ScratchCard.OnScratchListener() {
      }
 });
     
-```
-##### Any Queries? or Feedback, please let me know by opening a [new issue](https://github.com/myinnos/AndroidScratchCard/issues/new)!
 
-## Contact
-#### Prabhakar Thota
-* :globe_with_meridians: Website: [myinnos.in](http://www.myinnos.in "Prabhakar Thota")
-* :email: e-mail: contact@myinnos.in
-* :mag_right: LinkedIn: [PrabhakarThota](https://www.linkedin.com/in/prabhakarthota "Prabhakar Thota on LinkedIn")
-* :thumbsup: Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on twitter")    
 
 License
 -------
 
-    Copyright 2017 MyInnos
+    Copyright 2017 Niks
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
